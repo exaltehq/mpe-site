@@ -1,0 +1,35 @@
+# MPE Services d'Entretien - Directives pour les robots d'indexation
+User-agent: *
+
+# Allow access to all content
+Allow: /
+Allow: /zones-desservies/
+Allow: /nettoyage-*/
+Allow: /css/
+Allow: /img/
+
+# Optimizations
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.svg$
+
+# Prevent access to certain file types
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.docx$
+Disallow: /*.xls$
+Disallow: /*.xlsx$
+
+# Crawl-delay recommendation
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://mpeservices.ca/sitemap.xml
+
+# Additional sitemaps if needed in the future
+# Sitemap: https://mpeservices.ca/sitemap-cities.xml
+# Sitemap: https://mpeservices.ca/sitemap-services.xml
